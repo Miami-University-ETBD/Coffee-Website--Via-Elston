@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,13 @@
    <!-- Header of the website -->
    <header>
        <h1>Welcome to The Coffee Cafe</h1>
+
+       <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+       </div>
+
    </header>
 
    <!-- Main container with Flexbox layout -->
@@ -30,10 +37,13 @@
                <ul>
                    <li>Iced Lattes</li>
                    <li>Hot Lattes</li>
-                   <li>Handcrafted Pastries</li>
+                   <li>Pastries</li>
 
                </ul>
 
+               <div class="image-container">
+                <img src="images /woman drinking coffee .jpg" alt="women drinking coffee" class="rounded" class="bordered">
+              </div>
                <h2>Some Menu Items</h2>
                <table>
                    <tr>
@@ -67,14 +77,51 @@
 
            <!-- Aside for additional information -->
            <aside>
+            <div class="image-container">
+              <img src="images /Screenshot 2025-03-11 at 3.12.27 PM.png" alt="coffee" class="rounded" class="bordered">
+            </div>
+
                <h2>Special Offers</h2>
-               <p>Join our loyalty program with your phone number and receive rewards. Sign up today in-store with your purchase!</p>
+               <p>Join our loyalty program with your phone number and receive rewards. Sign up today in the box below or in-store with your purchase!</p>
                <h2><u>Contact Us</u></h2>
                <p>123 Coffee Bean Lane, Oxford, OH</p>
                <p>Phone: (123) 456-7890</p>
                <p>Email: <u>coffeeandbean@gmail.com</u></p>
            </aside>
        </div>
+
+       <h3>Enter your phone number here to earn rewards and points!</h3>
+        <br>
+        <input id="userInput"> <br><br>
+        <button onclick="myFunction()">Submit</button>
+        <p id="message"></p>
+        <script>function myFunction() {
+        let userInput = document.querySelector ("#userInput");
+        let message = document.querySelector ("#message");
+        message.innerHTML = "Thank you for applying" + userInput.value;
+        }
+        </script>
+
+<h3>Help us select the drink of the month!</h3>
+<script>
+function getOption() {
+var obj = document.getElementById("mySelect");
+document.getElementById("demo").innerHTML =
+obj.options[obj.selectedIndex].text;
+}
+</script>
+<form>
+Select the coffee concoction that's your favorite:
+<select id="mySelect">
+<option>Shamrock Shimmy</option>
+<option>Va-mella</option>
+<option>Nutella Cappuccino</option>
+<option>Honey Lavendar Latte</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Submit!">
+</form>
+<p id="demo"></p>
 
 
        <!-- Footer of the website -->
