@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="style.css">
-
+ <link rel="stylesheet" href="style.css"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>The Coffee Cafe</title>
+   <title>The Best Coffee Around</title>
   </head>
   <body>
    <!-- Header of the website -->
    <header>
        <h1>Welcome to The Coffee Cafe</h1>
-   </header>
 
-<<<<<<< Updated upstream
-<body>
-     
-     </head>
-     <style>
-       body {background-color: #f2f1dd;
-       }
-     </style>
-       <h2>Look at our <u>seaonal</u> menu items:</h2>
-     <p>If you <b>LOVE</b> to try new, fun things, this menu is perfect for you!</h3>
-   <style>
-     h2 {color:#3a1b06;}
-     h3 {color:rgb(91, 65, 40);}
-     p {color: #3a1b06;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-   </style>
- 
-   <ul>
-   <li><i>Iced Lavendar Latte with Honey Cold Foam</li>
-   <li>London Fog</li>
-     <li>Caramel and Vanilla Latte with Chocolate Drizzle</i></li>
- </ul>
-  <style>
-   table, th, td {border:1px solid #3a1b06;}
- </style>
- <body>
-   <h2>Where our coffee beans are from:</h2>
-   <table style="width:50%">
-     <tr>
-       <th>Brand</th>
-       <th>Location</th>
-=======
->>>>>>> Stashed changes
+       <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+       </div>
+
+   </header>
 
    <!-- Main container with Flexbox layout -->
    <div class="container">
@@ -65,10 +36,13 @@
                <ul>
                    <li>Iced Lattes</li>
                    <li>Hot Lattes</li>
-                   <li>Handcrafted Pastries</li>
+                   <li>Pastries</li>
 
                </ul>
 
+               <div class="image-container">
+                <img src="images /woman drinking coffee .jpg" alt="women drinking coffee" class="rounded" class="bordered">
+              </div>
                <h2>Some Menu Items</h2>
                <table>
                    <tr>
@@ -102,14 +76,51 @@
 
            <!-- Aside for additional information -->
            <aside>
+            <div class="image-container">
+              <img src="images /Screenshot 2025-03-11 at 3.12.27 PM.png" alt="coffee" class="rounded" class="bordered">
+            </div>
+
                <h2>Special Offers</h2>
-               <p>Join our loyalty program with your phone number and receive rewards. Sign up today in-store with your purchase!</p>
-               <h2>Contact Us</h2>
+               <p>Join our loyalty program with your phone number and receive rewards. Sign up today in the box below or in-store with your purchase!</p>
+               <h2><u>Contact Us</u></h2>
                <p>123 Coffee Bean Lane, Oxford, OH</p>
                <p>Phone: (123) 456-7890</p>
-               <p>Email: coffeeandbean@gmail.com</p>
+               <p>Email: <u>coffeeandbean@gmail.com</u></p>
            </aside>
        </div>
+
+       <h3>Enter your phone number here to earn rewards and points!</h3>
+        <br>
+        <input id="userInput"> <br><br>
+        <button onclick="myFunction()">Submit</button>
+        <p id="message"></p>
+        <script>function myFunction() {
+        let userInput = document.querySelector ("#userInput");
+        let message = document.querySelector ("#message");
+        message.innerHTML = "Thank you for applying" + userInput.value;
+        }
+        </script>
+
+<h3>Help us select the drink of the month!</h3>
+<script>
+function getOption() {
+var obj = document.getElementById("mySelect");
+document.getElementById("demo").innerHTML =
+obj.options[obj.selectedIndex].text;
+}
+</script>
+<form>
+Select the coffee concoction that's your favorite:
+<select id="mySelect">
+<option>Shamrock Shimmy</option>
+<option>Va-mella</option>
+<option>Nutella Cappuccino</option>
+<option>Honey Lavendar Latte</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Submit!">
+</form>
+<p id="demo"></p>
 
 
        <!-- Footer of the website -->
