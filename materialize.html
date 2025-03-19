@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bakery Delight</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <style>
+       .header-bg {
+           background-color: #5d4037; /* Light pink background */
+       }
+       .section-bg {
+           background-color: #bcaaa4; /* Light orange background */
+       }
+       .shadow {
+           box-shadow: 0 4px 8px #3e2723;
+       }
+       .table-header {
+           background-color: #d7ccc8; /* Light red background */
+           color: white;
+       }
+   </style>
+</head>
+<body>
+
+
+   <!-- Navbar -->
+   <nav class="header-bg">
+       <div class="nav-wrapper">
+<ul>
+   <li><a href="index.html">Home</a></li>
+   <li> <a href="menu.html">Menu</a></li>
+  <li> <a href="aboutus.html">About Us</a></li>          
+           </ul>
+       </div>
+   </div>
+   </nav>
+
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Welcome to The Coffee Cafe</h1>
+       <p class="white-text">Fun Drinks and Good Times</p>
+   </div>
+
+
+   <!-- About Us Section -->
+   <div id="about" class="section section-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 m6">
+              
+                   <h2>About Us</h2>
+                   <p>The Coffee Cafe is family oriented with actual family and employees that feel like family. We love coming up with new drink ideas and being creative.
+                    Meeting new customers and hearing your stories is the best part of our day.</p>
+               </div>
+               <div class="col s12 m6">
+                   <img src="images /three cups.png" alt="Three Cups of Coffee" class="circle responsive-img">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!--Video-->
+   <div class="container">
+    <h3 class="center-align">History of Coffee</h3>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t2AH8OCjlS8" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- MaterializeJS CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <!-- Menu Section -->
+   <div id="menu" class="section">
+       <div class="container">
+           <h2>Customer Favorites</h2>
+           <table class="highlight">
+               <thead class="table-header">
+                   <tr>
+                       <th>Item</th>
+                       <th>Description</th>
+                       <th>Price</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>White Chocolate Mocha</td>
+                       <td>A Fan Favorite Since Day One.</td>
+                       <td>$5.00</td>
+                   </tr>
+                   <tr>
+                       <td>Caramel Cascade</td>
+                       <td>A Sweet Caramel Macchiato.</td>
+                       <td>$6.00</td>
+                   </tr>
+                   <tr>
+                       <td>Coconut Cream Cold Brew</td>
+                       <td>Cold Brew with Coconut Flavoring.</td>
+                       <td>$6.00</td>
+                   </tr>
+                   <tr>
+                       <td>Avocado Toast</td>
+                       <td>Our New Menu Item.</td>
+                       <td>$8.50</td>
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+   </div>
+   <div class="row">
+
+
+       <div class="col s4">
+           <img src="images /avocadotoast.png" alt="Avocado Toast" class="responsive-img shadow">
+           <blockquote>Avocado Toast - Menu Item</blockquote>
+       </div>
+       <div class="col s4">
+           <img src="images /singlecoffee.png" alt="Cup of Coffee" class="responsive-img shadow">
+           <blockquote>Hot Latte</blockquote>
+       </div>
+       <div class="col s4">
+           <img src="images /coffee shop menu and drinks.jpg" alt="Menu and Drink" class="responsive-img shadow">
+           <blockquote>Take Some Aesthetic Photos</blockquote>
+       </div>
+      </div>
+   <!-- Contact Section -->
+   <div id="contact" class="section section-bg">
+       <div class="container">
+           <h2>Contact Us</h2>
+           <div class="row">
+               <div class="col s12 m6">
+                   <form>
+                       <div class="input-field">
+                           <input id="name" type="text" class="validate">
+                           <label for="name">Name</label>
+                       </div>
+                       <div class="input-field">
+                           <input id="email" type="email" class="validate">
+                           <label for="email">Email</label>
+                       </div>
+                       <div class="input-field">
+                           <textarea id="message" class="materialize-textarea"></textarea>
+                           <label for="message">Message</label>
+                       </div>
+                       <button type="submit" class="btn waves-effect waves-light">Send</button>
+                   </form>
+               </div>
+               <div class="col s12 m6">
+                   <h5>Visit Us</h5>
+                   <p>123 Coffee Bean Lane,<br> Oxford, OH</p>
+                   <p><i class="material-icons">phone</i> (123) 456-7890</p>
+                   <p><i class="material-icons">email</i> coffeeandbean@gmail.com</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Footer -->
+   <footer class="page-footer header-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 center-align">
+                   <p class="white-text">&copy; 2025 Bakery Delight. All rights reserved.</p>
+                   
+               </div>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>
