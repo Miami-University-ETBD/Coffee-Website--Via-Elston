@@ -2,7 +2,7 @@
 
 /* Navigation Bar Container */
 .navbar {
-    background-color: #392c04;
+    background-color: #5d4037;
     overflow: hidden;
  }
  
@@ -20,7 +20,7 @@
  
  /* Change color on hover */
  .navbar a:hover {
-    background-color: #ddd;
+    background-color: #bcaaa4;
     color: rgb(141, 141, 154);
  }
  
