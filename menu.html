@@ -3,6 +3,8 @@
 <head>
  <link rel="stylesheet" href="style.css">
 
+<!-- Materialize JS (M must be loaded first) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>The Coffee Cafe</title>
@@ -16,6 +18,7 @@
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="aboutus.html">About Us</a>
+        <a href="materialize.html">Information</a>
     </div>
 
    </header>
@@ -23,6 +26,32 @@
    <!-- Main container with Flexbox layout -->
    <div class="container">
 
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="images /coffeeshopaestehtic.png"></a>
+        <a class="carousel-item" href="#two!"><img src="images /pinksparklydrink.png"></a>
+        <a class="carousel-item" href="#three!"><img src="images /coffeewithdesign.png"></a>
+        <a class="carousel-item" href="#four!"><img src="images /man.png"></a>
+        <a class="carousel-item" href="#five!"><img src="images /greendrink.png"></a>
+
+        <!-- Carousel Init Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, options);
+    });
+  
+    var options = {
+        duration: 200,
+        dist: 0,
+        shift: 0,
+        padding: 0,
+        numVisible: 5,
+        indicators: false,
+        noWrap: false,
+      };
+  </script>
+      </div>
+          
 
        <!-- Main content area with Flexbox layout -->
        <div class="main-content">
@@ -85,7 +114,6 @@
                </table>
            </section>
 
-
            <!-- Aside for additional information -->
            <aside>
                <h2>Loyalty Program</h2>
@@ -95,13 +123,13 @@
                <!--Insert Image here-->
                <p><i>Limited Pastries</i> Offered In The Store Daily</p>
            </aside>
-           
-
            </div>
-       <!-- Footer of the website -->
-       <footer>
-           <p>&copy; 2025 The Coffee Cafe. All rights reserved.</p>
-       </footer>
-   </div>
+
+<!-- Footer of the website -->
+<footer>
+    <p>&copy; 2025 The Coffee Cafe. All rights reserved.</p>
+</footer>
+</div>
+
 </body>
 </html>
