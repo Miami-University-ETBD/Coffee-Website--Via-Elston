@@ -3,6 +3,11 @@
 <head>
  <link rel="stylesheet" href="style.css">
 
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
 <!-- Materialize JS (M must be loaded first) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -14,43 +19,29 @@
    <header>
        <h1>Menu Guide</h1>
 
+    <nav>
        <div class="navbar">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="aboutus.html">About Us</a>
         <a href="materialize.html">Information</a>
-    </div>
+        </div>
+    </nav>
 
    </header>
 
    <!-- Main container with Flexbox layout -->
    <div class="container">
 
-    <div class="carousel">
-        <a class="carousel-item" href="#one!"><img src="images /coffeeshopaestehtic.png"></a>
-        <a class="carousel-item" href="#two!"><img src="images /pinksparklydrink.png"></a>
-        <a class="carousel-item" href="#three!"><img src="images /coffeewithdesign.png"></a>
-        <a class="carousel-item" href="#four!"><img src="images /man.png"></a>
-        <a class="carousel-item" href="#five!"><img src="images /greendrink.png"></a>
+  <!-- Carousel -->
+<div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="images/coffeeshop.jpg" alt="Cozy coffee shop aesthetic"></a>
+    <a class="carousel-item" href="#two!"><img src="images/coffeesteaming.jpg" alt="Hot coffee with steam"></a>
+    <a class="carousel-item" href="#three!"><img src="images/funcoffeedrink.jpg" alt="Drink with sprinkles and whipped cream"></a>
+    <a class="carousel-item" href="#four!"><img src="images/womandrinkingcoffee.jpg" alt="Woman drinking coffee"></a>
+    <a class="carousel-item" href="#five!"><img src="images/pastriesandcoffee.jpg" alt="Donuts on the table"></a>
+  </div>
 
-        <!-- Carousel Init Script -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.carousel');
-      var instances = M.Carousel.init(elems, options);
-    });
-  
-    var options = {
-        duration: 200,
-        dist: 0,
-        shift: 0,
-        padding: 0,
-        numVisible: 5,
-        indicators: false,
-        noWrap: false,
-      };
-  </script>
-      </div>
           
 
        <!-- Main content area with Flexbox layout -->
@@ -63,7 +54,7 @@
                <h2>Some Add Ins</h2>
                <p>At <strong>The Coffee Cafe</strong>, specializes in a variety of caffeinated beverages. Our <em>signature</em> items include:</p>
                <ul>
-                   <li>Syrup: Vanilla, Hazlenut, Mocha, Irish Cream, & Caramel</li>
+                   <li>Syrup: Vanilla, Hazelnut, Mocha, Irish Cream, & Caramel</li>
                    <li>Vanilla Cold Foam</li>
                    <li>Cinnamon or Cocoa Powder Dusted on Top</li>
 
@@ -107,8 +98,8 @@
                     <td>$5.00 </td>
                 </tr>
                 <tr>
-                    <td>Honey Lavendar Latte</td>
-                    <td>Honey & Lavendar Harvested From A Local Farm</td>
+                    <td>Honey Lavender Latte</td>
+                    <td>Honey & Lavender Harvested From A Local Farm</td>
                     <td>$5.00</td>
                 </tr>
                </table>
@@ -130,6 +121,25 @@
     <p>&copy; 2025 The Coffee Cafe. All rights reserved.</p>
 </footer>
 </div>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel.carousel-slider');
+      var instances = M.Carousel.init(elems, {
+        fullWidth: true,
+        indicators: true
+      });
+  
+      // Autoplay
+      setInterval(function() {
+        instances.forEach(function(instance) {
+          instance.next();
+        });
+      }, 3000);
+    });
+  </script>
 
 </body>
 </html>

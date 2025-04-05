@@ -247,3 +247,10 @@ body {
     width: 200px; /* You can adjust the width as per your requirement */
  }
  
+ .carousel {
+    height: 400px;
+  }
+  .carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
