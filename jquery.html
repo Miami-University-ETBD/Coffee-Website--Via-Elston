@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      });
+    });
+    </script>
+
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").hide();
+      });
+    });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          $("input").focus(function(){
+            $(this).css("background-color", "yellow");
+          });
+          $("input").blur(function(){
+            $(this).css("background-color", "green");
+          });
+        });
+        </script>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coffee Cafe</title>
+</head>
+<body>
+
+<!-- Header of the website -->
+<header>
+   <h1>Welcome to The Coffee Cafe</h1>
+  
+   <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="materialize.html">Information</a>
+    <a href="jquery.html">JQuery</a>
+   </div>
+
+
+</header>
+<body>
+
+        <!-- Section for bakery introduction -->
+        <section style="background-color: #ba9e9f;">
+            <h2>Learn More About The Coffee Cafe</h2>
+
+            <p>We are family owned, and many of our original employees who were here when we opened the shop still work here today.</p>
+            <p>We always donate back to Miami University, and always come up for family weekend since we are alums. We hand out our business cards and give out special discounts to students when they come visit out store.</p>
+            
+            <button>Click me to hide paragraphs</button>
+        </section>
+
+        <section style="background-color: #ded0d1;">
+<h2>Click on one of the lines below to help you narrow down your drink choice!</h2>
+<p>Iced Vanilla Latte</p>
+<p>Iced White Mocha Latte</p>
+<p>Nutella Cappacino</p>
+</section>
+
+<section style="background-color: #c9abab;">
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+</section>
+
+
+<footer>
+    <p>&copy; 2025 The Coffee Cafe. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
